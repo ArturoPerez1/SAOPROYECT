@@ -2,7 +2,7 @@ package MainProject;
 
 /**
  *
- * @author LAB_ING
+ * @author Wjose
  */
 public class MainClass {
     public static void main(String[] args) {

@@ -4,6 +4,6 @@ package View;
  *
  * @author Wjose
  */
-public class windows {
+public class boxText {
     
 }
