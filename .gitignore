@@ -1,3 +1,3 @@
 #ignoramos archivos .xml
-*.xml
+*pom.xml
 /test
