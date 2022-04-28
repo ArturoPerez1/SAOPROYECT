@@ -1,0 +1,2 @@
+# SAOPROYECT
+SAO(Sistema De Agendado Odontológico) es un proyecto para lograr automatizar el agendado de citas odontológicas, como también mejorar la parte administrativa. Este proyecto contará con dos fases,  la primera fase es la codificación de la aplicación de escritorio ( aplicación gratuita) y la segunda fase será la codificación del servidor para hacer el proceso más ágil a la hora del registro del cliente pudiendo así mejorar la experiencia y esta segunda fase formará parte de SAM(Sistema Administrativo Médico). Todo esto será desarrollado por la startup MONKEYDAY. 
