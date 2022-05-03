@@ -1,3 +1,5 @@
 #ignoramos archivos .xml
 *pom.xml
+*windows.form
 /test
+/SAOPROYECTBYMONKEYDAY/target/
