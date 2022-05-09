@@ -1,7 +1,6 @@
 package mainPackages;
 
 import controllerPackages.ControladorInicioBotones;
-import modelPackages.IniciarSesion;
 import viewPackages.IniciarSesionVista;
 
 public class MainClass {

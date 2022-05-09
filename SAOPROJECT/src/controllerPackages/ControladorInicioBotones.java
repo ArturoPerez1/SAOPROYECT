@@ -2,7 +2,6 @@ package controllerPackages;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import modelPackages.IniciarSesion;
 import viewPackages.IniciarSesionVista;
 import viewPackages.PanelRegistrarse;
 
