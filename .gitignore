@@ -1,10 +1,1 @@
 #ignoramos archivos .xml
-*build.xml
-*manifest.mf
-*IniciarSesionVista.form
-/test
-/SAOPROJECT/assest
-/SAOPROYECTBYMONKEYDAY/target/
-/SAOPROJECT/nbproject/private/
-/SAOPROJECT/build/
-/SAOPROJECT/test
