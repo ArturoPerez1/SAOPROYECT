@@ -1,9 +1,8 @@
 package viewPackages;
 
+import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseListener;
 import javax.swing.JButton;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -13,11 +12,12 @@ public class IniciarSesionVista extends javax.swing.JFrame {
     public IniciarSesionVista() {
         initComponents();
     }
+    
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelContenedor = new javax.swing.JPanel();
+        _panelContenedor = new javax.swing.JPanel();
         panelInicioSesion = new javax.swing.JPanel();
         LogoSesion = new javax.swing.JLabel();
         iniciarSesionText = new javax.swing.JLabel();
@@ -34,19 +34,19 @@ public class IniciarSesionVista extends javax.swing.JFrame {
         startupNAme = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(null);
 
-        panelContenedor.setBackground(new java.awt.Color(255, 255, 255));
-        panelContenedor.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        _panelContenedor.setBackground(new java.awt.Color(255, 255, 255));
+        _panelContenedor.setLayout(null);
 
-        panelInicioSesion.setBackground(new java.awt.Color(0, 102, 255));
+        panelInicioSesion.setBackground(new java.awt.Color(0, 0, 255));
         panelInicioSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LogoSesion.setIcon(new javax.swing.ImageIcon("C:\\Users\\Wjose\\OneDrive\\Documents\\SAOPROJECT\\SAOPROYECT\\SAOPROJECT\\assest\\descarga (1).png")); // NOI18N
         panelInicioSesion.add(LogoSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 220, 180));
 
         iniciarSesionText.setFont(new java.awt.Font("Metropolis Black", 1, 36)); // NOI18N
-        iniciarSesionText.setForeground(new java.awt.Color(102, 102, 102));
+        iniciarSesionText.setForeground(new java.awt.Color(255, 255, 255));
         iniciarSesionText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         iniciarSesionText.setText("INICIAR SESIÓN");
         panelInicioSesion.add(iniciarSesionText, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 350, 30));
@@ -58,7 +58,7 @@ public class IniciarSesionVista extends javax.swing.JFrame {
         panelInicioSesion.add(usuarioText, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 100, 30));
 
         usuarioInputText.setFont(new java.awt.Font("Metropolis Black", 1, 15)); // NOI18N
-        panelInicioSesion.add(usuarioInputText, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, 340, 40));
+        panelInicioSesion.add(usuarioInputText, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, 320, 40));
 
         jSeparator1.setBackground(new java.awt.Color(204, 204, 204));
         panelInicioSesion.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 442, 360, 10));
@@ -82,7 +82,7 @@ public class IniciarSesionVista extends javax.swing.JFrame {
         botonEntrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         panelInicioSesion.add(botonEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 700, 170, 40));
 
-        registraseBoton.setBackground(new java.awt.Color(0, 102, 255));
+        registraseBoton.setBackground(new java.awt.Color(0, 0, 255));
         registraseBoton.setFont(new java.awt.Font("Metropolis Black", 1, 18)); // NOI18N
         registraseBoton.setForeground(new java.awt.Color(255, 255, 255));
         registraseBoton.setText("¿DESEA REGISTRARSE?");
@@ -90,25 +90,30 @@ public class IniciarSesionVista extends javax.swing.JFrame {
         registraseBoton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         panelInicioSesion.add(registraseBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 830, 390, -1));
 
-        panelContenedor.add(panelInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, 530, 1080));
+        _panelContenedor.add(panelInicioSesion);
+        panelInicioSesion.setBounds(0, 0, 560, 1000);
 
         logoProyecto.setIcon(new javax.swing.ImageIcon("C:\\Users\\Wjose\\OneDrive\\Documents\\SAOPROJECT\\SAOPROYECT\\SAOPROJECT\\assest\\0f1f99b40c76ee889ea6cc6960862e43-logotipo-de-mono-mono.png")); // NOI18N
-        panelContenedor.add(logoProyecto, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 90, 490, 420));
+        _panelContenedor.add(logoProyecto);
+        logoProyecto.setBounds(1070, 100, 490, 420);
 
         projectName.setFont(new java.awt.Font("Metropolis Black", 1, 48)); // NOI18N
         projectName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         projectName.setText("SAOPROJECT");
-        panelContenedor.add(projectName, new org.netbeans.lib.awtextra.AbsoluteConstraints(1250, 560, 440, 50));
+        _panelContenedor.add(projectName);
+        projectName.setBounds(1110, 560, 440, 50);
 
         startupNAme.setFont(new java.awt.Font("Metropolis Black", 1, 14)); // NOI18N
         startupNAme.setForeground(new java.awt.Color(204, 204, 204));
         startupNAme.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         startupNAme.setText("BY MONKEYDAY");
-        panelContenedor.add(startupNAme, new org.netbeans.lib.awtextra.AbsoluteConstraints(1810, 1030, 180, 40));
+        _panelContenedor.add(startupNAme);
+        startupNAme.setBounds(1720, 940, 180, 40);
 
-        getContentPane().add(panelContenedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 0, 2010, 1080));
+        getContentPane().add(_panelContenedor);
+        _panelContenedor.setBounds(0, 0, 1920, 1000);
 
-        setBounds(0, 0, 1950, 1127);
+        setBounds(0, 0, 1937, 1046);
     }// </editor-fold>//GEN-END:initComponents
     
     public void ActioListenerBotonEntrar(ActionListener listener){
@@ -116,16 +121,24 @@ public class IniciarSesionVista extends javax.swing.JFrame {
         registraseBoton.addActionListener(listener);
     }
     
+    public void MostrarVistaInicial(){
+        _panelContenedor.removeAll();       
+        initComponents();
+        _panelContenedor.revalidate();
+        _panelContenedor.repaint();
+    }
+    
 
-     
+    private PanelRegistrarse _panelRegistrarse;
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel LogoSesion;
+    private javax.swing.JPanel _panelContenedor;
     private javax.swing.JButton botonEntrar;
     private javax.swing.JLabel iniciarSesionText;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel logoProyecto;
-    private javax.swing.JPanel panelContenedor;
     private javax.swing.JPanel panelInicioSesion;
     private javax.swing.JPasswordField passwordInputText;
     private javax.swing.JLabel passwordText;
@@ -135,7 +148,8 @@ public class IniciarSesionVista extends javax.swing.JFrame {
     private javax.swing.JTextField usuarioInputText;
     private javax.swing.JLabel usuarioText;
     // End of variables declaration//GEN-END:variables
-
+    //variable defined for me
+   
     public JButton getBotonEntrar() {
         return botonEntrar;
     }
@@ -175,8 +189,23 @@ public class IniciarSesionVista extends javax.swing.JFrame {
     public void setRegistraseBoton(JButton registraseBoton) {
         this.registraseBoton = registraseBoton;
     }
+                 
+    public void MostrarPanelRegistrarse(){
+        _panelRegistrarse = new PanelRegistrarse();
+        _panelRegistrarse.setSize(2010, 1080);
+        _panelRegistrarse.setLocation(0, 0);
+        _panelContenedor.removeAll();
+        _panelContenedor.add(_panelRegistrarse, BorderLayout.CENTER);
+        _panelContenedor.revalidate();
+        _panelContenedor.repaint();  
+    } 
     
+    public PanelRegistrarse getPanelRegistrarse1() {
+        return _panelRegistrarse;
+    }
     
-    
+        public void setPanelRegistrarse1(PanelRegistrarse _panelRegistrarse) {
+        this._panelRegistrarse = _panelRegistrarse;
+    }
 }
 
